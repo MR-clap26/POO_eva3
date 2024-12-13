@@ -24,7 +24,7 @@ def consultar_api():
 
                 tareas.append(nueva_tarea)
             #print(tareas)
-            return (tareas)
+            return tareas           
             
 
     except requests.exceptions.Timeout:
@@ -36,4 +36,6 @@ def consultar_api():
         print("")
 
 
-print(consultar_api)
+def enviar_api():
+    
+    direcc= 'http://jsonplaceholder.pycode.com'
